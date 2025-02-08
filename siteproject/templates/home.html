@@ -1,0 +1,98 @@
+{% extends 'index.html' %}
+{% load i18n %}
+{% load static %}
+
+{%  block page %}
+  <header>
+        <!-- header inner -->
+        <div class="header">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="active"> <a href="{% url 'home' %}">Главная</a> </li>
+                                        <li> <a href="{% url 'about' %}">О нас</a> </li>
+                                        <li><a href="{% url 'brand' %}">Брэнд</a></li>
+                                        <li><a href="{% url 'special' %}">Специально</a></li>
+                                        <li><a href="{% url 'contact' %}">Контакты</a></li>
+                                        <li class="last">
+                                            <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="icon" /></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-6">
+                        <div class="location_icon_bottum">
+                            <ul>
+                                <li><img src="{% static 'icon/call.png' %}" />(+71)9876543109</li>
+
+                                <li><img src="{% static 'icon/email.png' %}" />demo@gmail.com</li>
+
+                                <li><img src="{% static 'icon/loc.png' %}" />Location</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
+    </header>
+{% endblock %}
+
+{% block page2 %}
+    <footer>
+        <div id="contact" class="footer">
+            <div class="container">
+                <div class="row pdn-top-30">
+                    <div class="col-md-12 ">
+                        <div class="footer-box">
+                            <div class="headinga">
+                                <h3>Address</h3>
+                                <span>Healing Center, 176 W Streetname,New York, NY 10014, US</span>
+                                <p>(+71) 8522369417
+                                    <br>demo@gmail.com</p>
+                            </div>
+                            <ul class="location_icon">
+                                <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                            </ul>
+                            <div class="menu-bottom">
+                                <ul class="link">
+                                    <li> <a href="#">Home</a></li>
+                                    <li> <a href="#">About</a></li>
+
+                                    <li> <a href="#">Brand </a></li>
+                                    <li> <a href="#">Specials  </a></li>
+                                    <li> <a href="#"> Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2019 All Rights Reserved. Design By<a href="https://html.design/"> Free Html Templates</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}
